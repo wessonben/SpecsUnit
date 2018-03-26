@@ -1,5 +1,4 @@
 ﻿using Moq;
-using Moq.AutoMock;
 using NUnit.Framework;
 
 namespace SpecsUnit
@@ -19,12 +18,12 @@ namespace SpecsUnit
     {
         public T SUT { get; private set; }
 
-        private readonly AutoMocker _autoMocker;
+        private readonly AutoMocker.AutoMocker _autoMocker;
 
 
         protected Spec()
         {
-            _autoMocker = new AutoMocker();
+            _autoMocker = new AutoMocker.AutoMocker();
         }
 
 
